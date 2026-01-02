@@ -1,0 +1,19 @@
+# Ignorar pastas automáticas do Colab
+sample_data/
+drive/
+/content/drive/
+
+# Ignorar notebooks checkpoint
+.ipynb_checkpoints/
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar dados MUITO grandes (mas permitir os pequenos/essenciais)
+data/*.csv
+!data/small_dataset.csv  # exceto se for pequeno
+*.xlsx                   # ATENÇÃO: isso ignora TODOS arquivos Excel!
+
+# Configurações do ambiente
+.config/
